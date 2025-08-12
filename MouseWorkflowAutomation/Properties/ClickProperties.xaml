@@ -1,0 +1,18 @@
+<UserControl x:Class="MouseWorkflowAutomation.Properties.ClickProperties"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MouseWorkflowAutomation.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="200">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Click Properties" FontWeight="Bold" Margin="5"/>
+            <TextBlock Text="X:" Margin="5,0,5,0"/>
+            <TextBox x:Name="XCoordinate" Margin="5" Text="{Binding Action.X, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Y:" Margin="5,0,5,0"/>
+            <TextBox x:Name="YCoordinate" Margin="5" Text="{Binding Action.Y, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
